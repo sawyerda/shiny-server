@@ -10,7 +10,7 @@ shinyServer(function(input, output){
       }
     })
     create.data  <- eventReactive(input$submit, {
-     scoreboard <- read.csv("./data/output/ViewableScoreboard.csv", header = TRUE)
+     scoreboard <- read.csv("./data/output/ViewableScoreBoard.csv", header = TRUE)
     },
     ignoreNULL = FALSE)
     output$contents <- renderDataTable({
